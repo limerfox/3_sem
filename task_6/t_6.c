@@ -78,6 +78,7 @@ void work(int fd, char *dir_path) {
             dprintf(STDERR_FILENO, "%s", buff);
         }
     }
+    closedir(dir);
     dprintf(STDERR_FILENO, "\n\n");
 }
 
